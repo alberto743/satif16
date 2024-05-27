@@ -47,6 +47,8 @@ public:
     double& get_source();
     std::string show() const;
     double solve();
+
+    static std::shared_ptr<Problem> load_input(const std::string&);
 };
 
 #endif // ATTEN_H

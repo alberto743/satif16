@@ -2,6 +2,7 @@
 #include <string>
 #include <sstream>
 #include <cmath>
+#include <fstream>
 #include "attenuation3.hpp"
 
 
@@ -76,6 +77,42 @@ double Problem::solve()
     intensity *= exp(- exponent);
     return intensity;
 }
+std::shared_ptr<Problem> Problem::load_input(const std::string& filename) {
+    std::ifstream inputdata;
+    std::string mystring;
+    double thick1, thick2;
+    double sig;
+
+    auto prob = std::make_shared<Problem>();
+
+    inputdata.open(filename);
+    if (!inputdata) {
+        std::cerr << "Non-existing input file" << std::endl;
+    } else {
+        inputdata >> mystring;
+        thick1 = std::stod(mystring);
+        inputdata >> mystring;
+        thick2 = std::stod(mystring);
+
+        inputdata >> mystring;
+        sig = std::stod(mystring);
+        auto mat1 = std::make_shared<Material>(sig);
+        inputdata >> mystring;
+        sig = std::stod(mystring);
+        auto mat2 = std::make_shared<Material>(sig);
+
+        auto slab1 = std::make_shared<Slab>(thick1, mat1);
+        auto slab2 = std::make_shared<Slab>(thick2, mat2);
+
+        inputdata >> mystring;
+
+        prob->add_slab(*slab1);
+        prob->add_slab(*slab2);
+        prob->set_source(std::stod(mystring));
+    }
+
+    return prob;
+}
 
 
 int main(int argc, char* argv[])
@@ -94,10 +131,16 @@ int main(int argc, char* argv[])
     //std::cout << *src << std::endl;
 
     std::vector<Slab> slabs{*slab1, *slab2};
-    Problem prob(*src, slabs);
-    std::cout << prob.show() << std::endl;
-    auto intensity = prob.solve();
-    std::cout << "Result: " << intensity << std::endl;
+    auto prob1 = std::make_shared<Problem>(*src, slabs);
+    auto intensity = prob1->solve();
+    std::cout << prob1->show() << std::endl;
+    std::cout << "Result: " << prob1->solve() << std::endl;
+
+    std::cout << std::endl;
+
+    auto prob2 = Problem::load_input("data.txt");
+    std::cout << prob2->show() << std::endl;
+    std::cout << "Result: " << prob2->solve() << std::endl;
 
     return 0;
 }

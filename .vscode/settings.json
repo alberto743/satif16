@@ -51,6 +51,11 @@
         "forward_list": "cpp",
         "unordered_set": "cpp",
         "typeindex": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "valarray": "cpp",
+        "variant": "cpp"
     }
 }
