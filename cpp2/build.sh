@@ -1,3 +1,3 @@
 #!/bin/bash
 
-g++ -g -o attenuation2 attenuation2.cpp
+g++ -g -o attenuation attenuation.cpp

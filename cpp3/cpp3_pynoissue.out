@@ -1,0 +1,11 @@
+Source: 57.33
+Layers: 2
+Thickness: 2.1, Sigma: 0.0031
+Thickness: 1.2, Sigma: 0.0682
+Result1:  52.48219907796121
+
+Source: 978.33
+Layers: 2
+Thickness: 2.1, Sigma: 0.0031
+Thickness: 1.2, Sigma: 0.0682
+Result2:  895.6028226747218

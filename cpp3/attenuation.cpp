@@ -3,7 +3,7 @@
 #include <sstream>
 #include <cmath>
 #include <fstream>
-#include "attenuation3.hpp"
+#include "attenuation.hpp"
 
 
 std::string Material::show() const

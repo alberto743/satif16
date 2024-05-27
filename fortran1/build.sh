@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gfortran -g -o attenuation1 attenuation1.f90
+gfortran -g -o attenuation attenuation.f90

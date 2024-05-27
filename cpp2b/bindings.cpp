@@ -1,5 +1,5 @@
 #include <pybind11/pybind11.h>
-#include "attenuation2.hpp"
+#include "attenuation.hpp"
 
 namespace py = pybind11;
 

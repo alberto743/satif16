@@ -2,7 +2,7 @@
 #include <string>
 #include <fstream>
 #include <cmath>
-#include "attenuation2.hpp"
+#include "attenuation.hpp"
 
 
 void Layer::set_thick(double t)
