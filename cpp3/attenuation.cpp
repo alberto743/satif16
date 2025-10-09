@@ -90,16 +90,16 @@ std::shared_ptr<Problem> Problem::load_input(const std::string& filename) {
         std::cerr << "Non-existing input file" << std::endl;
     } else {
         inputdata >> mystring;
-        thick1 = std::stod(mystring);
-        inputdata >> mystring;
-        thick2 = std::stod(mystring);
-
-        inputdata >> mystring;
         sig = std::stod(mystring);
         auto mat1 = std::make_shared<Material>(sig);
         inputdata >> mystring;
         sig = std::stod(mystring);
         auto mat2 = std::make_shared<Material>(sig);
+
+        inputdata >> mystring;
+        thick1 = std::stod(mystring);
+        inputdata >> mystring;
+        thick2 = std::stod(mystring);
 
         auto slab1 = std::make_shared<Slab>(thick1, mat1);
         auto slab2 = std::make_shared<Slab>(thick2, mat2);

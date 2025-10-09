@@ -2,7 +2,7 @@ fortran1/attenuation
 fortran2/attenuation
 fortran2/*.mod
 cpp2/attenuation
-cpp2b/attenuation.cpython-39-x86_64-linux-gnu.so
+cpp2b/attenuation.cpython-3*-linux-gnu.so
 cpp2b/attenuation
-cpp3/attenuation.cpython-39-x86_64-linux-gnu.so
+cpp3/attenuation.cpython-3*-linux-gnu.so
 cpp3/attenuation
