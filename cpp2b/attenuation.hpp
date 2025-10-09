@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: Copyright © 2024 Alberto P
+//
+// SPDX-License-Identifier: MPL-2.0
+
 #ifndef ATTEN_H
 #define ATTEN_H
 

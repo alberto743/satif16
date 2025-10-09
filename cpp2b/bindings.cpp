@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: Copyright © 2024 Alberto P
+//
+// SPDX-License-Identifier: MPL-2.0
+
 #include <pybind11/pybind11.h>
 #include "attenuation.hpp"
 

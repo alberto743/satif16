@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# SPDX-FileCopyrightText: Copyright © 2024 Alberto P
+#
+# SPDX-License-Identifier: MPL-2.0
+
 import math
 
 inputdata = "data.txt"

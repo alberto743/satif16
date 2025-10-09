@@ -1,3 +1,7 @@
+! SPDX-FileCopyrightText: Copyright © 2024 Alberto P
+!
+! SPDX-License-Identifier: MPL-2.0
+
 program attenaution
 use, intrinsic :: iso_fortran_env, only: real32, real64
 implicit none

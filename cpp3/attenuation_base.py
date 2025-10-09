@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# SPDX-FileCopyrightText: Copyright © 2024 Alberto P
+#
+# SPDX-License-Identifier: MPL-2.0
+
 from attenuation import Material, Slab, Problem
 
 m1 = Material(3.1e-3)

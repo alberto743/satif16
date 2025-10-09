@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: NONE
+#
+# SPDX-License-Identifier: CC0-1.0
+
 fortran1/attenuation
 fortran2/attenuation
 fortran2/*.mod
