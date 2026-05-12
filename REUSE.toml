@@ -1,0 +1,12 @@
+version = 1
+SPDX-PackageDownloadLocation = "https://github.com/alberto743/satif16"
+
+[[annotations]]
+path = [
+    "**/*.sh",
+    "**/*.out",
+    "**/*.txt"
+]
+precedence = "closest"
+SPDX-FileCopyrightText = "2026 Alberto P"
+SPDX-License-Identifier = "CC0-1.0"
