@@ -6,6 +6,7 @@
 
 import math
 
+
 inputdata = "data.txt"
 
 with open(inputdata, 'r') as fin:
