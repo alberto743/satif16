@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 Alberto P
+#
+# SPDX-License-Identifier: MPL-2.0
+
 cmake_minimum_required(VERSION 3.10)
 project(attenuation
     VERSION 1.0.0

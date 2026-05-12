@@ -1,1 +1,1 @@
-../data2.txt
+../tests/data2.txt

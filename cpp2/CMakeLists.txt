@@ -5,14 +5,14 @@
 cmake_minimum_required(VERSION 3.10)
 project(attenuation
     VERSION 1.0.0
-    LANGUAGES Fortran
+    LANGUAGES CXX
 )
 
 include(GNUInstallDirs)
 enable_testing()
 
 add_executable(attenuation
-    attenuation.f90
+    attenuation.cpp
 )
 
 install(TARGETS attenuation
