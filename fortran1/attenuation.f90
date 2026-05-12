@@ -17,7 +17,7 @@ character(len=*), parameter :: inputdata = "data.txt"
 inquire(file=inputdata, exist=ioexists)
 if (.not. ioexists) then
     write(*,*) "Non-existing input file"
-    return
+    stop 1
 end if
 
 open(newunit=iounit, file=inputdata, status="old", action="read")
