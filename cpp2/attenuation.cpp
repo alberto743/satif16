@@ -58,7 +58,7 @@ public:
         inputdata.open(filename);
         if (!inputdata) {
             std::cerr << "Non-existing input file" << std::endl;
-            exit(1);
+            exit(EXIT_FAILURE);
         } else {
             inputdata >> mystring;
             geometry[0].set_thick(std::stod(mystring));
