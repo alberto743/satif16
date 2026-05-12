@@ -53,6 +53,9 @@ void Problem::run() {
     intensity = source * exp(- (materials[0].get_sigma()*geometry[0].get_thick() + materials[1].get_sigma()*geometry[1].get_thick()));
     std::cout << intensity << std::endl;
 }
+double Problem::get_intensity() {
+    return this->intensity;
+}
 
 
 

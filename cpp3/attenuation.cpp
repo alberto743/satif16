@@ -92,6 +92,7 @@ std::shared_ptr<Problem> Problem::load_input(const std::string& filename) {
     inputdata.open(filename);
     if (!inputdata) {
         std::cerr << "Non-existing input file" << std::endl;
+        exit(EXIT_FAILURE);
     } else {
         inputdata >> mystring;
         sig = std::stod(mystring);
