@@ -68,5 +68,11 @@ add_test(NAME test_attenuation_py_module
 )
 set_tests_properties(test_attenuation_py_module PROPERTIES
     ENVIRONMENT "PYTHONPATH=${MODULE_OUTPUT_DIR}"
-    WORKING_DIRECTORY "${TEST_RUN_DIR}"
+)
+
+add_test(NAME test_attenuation_py_workaround
+    COMMAND Python::Interpreter ${CMAKE_CURRENT_SOURCE_DIR}/attenuation_workaround.py
+)
+set_tests_properties(test_attenuation_py_workaround PROPERTIES
+    ENVIRONMENT "PYTHONPATH=${MODULE_OUTPUT_DIR}"
 )
