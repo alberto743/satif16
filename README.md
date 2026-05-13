@@ -25,8 +25,8 @@ The output is provided in the standard output.
 Like [fortran1](#fortran1), but exposing the typical building blocks of the processing in terms of parsing of the card-based input deck and call of the numerical solver.
 
 ## cpp2
-This is a C++ version derived from [fortran2](#fortran2) in which the basic idea is to simply translate the calculation tool into a more modern programming language to exchance its capabilities.
-The parsing of the card-based input deck and the output shown into the standard output are preserved which the idea to keep retrocompatibility.
+This is a C++ version derived from [fortran2](#fortran2) in which the basic idea is to simply translate the calculation tool into a more modern programming language to enhance its capabilities.
+The parsing of the card-based input deck and the output shown into the standard output are preserved with the idea to keep retrocompatibility.
 
 ## cpp2a
 This is an attempt to provide a Python interface to the [cpp2](#cpp2) version.
