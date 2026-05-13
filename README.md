@@ -7,6 +7,10 @@ SPDX-License-Identifier: MPL-2.0
 # Purpose
 The purpose of this repository is to provide different implementations of the 2-slab attenuation problem, showing the effects of software design choices of the compiled language part to the bindings and the states available in the high-level user interface.
 
+## SATIF-16
+This work has been firstly presented at [SATIF-16](https://agenda.infn.it/event/34704/).
+Further extentions have been added over time.
+
 # Description
 
 ## python
