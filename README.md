@@ -13,6 +13,8 @@ Further extentions have been added over time.
 
 # Description
 
+Each version has its own CMake build script. The tests may be executed also by CTest.
+
 ## python
 This is a basic implementation of the 2-slab attenuation in Python by simple application of the
 $I = I_0 \cdot e^{- (\Sigma_1 d_1 + \Sigma_2 d_2)}$ equation.
